@@ -1,0 +1,130 @@
+/* =======================
+      Colors
+==========================*/
+
+:root {
+  --bodyBG: #f6f6f6;
+  --bodyFont: #2b3445;
+  --blue: #9fc5ef;
+  --blue-button: #1976d2;
+  --red-button: #e41d43;
+
+  --icons: #40464d;
+
+  --footer-bg: #212529;
+
+  --white: #fff;
+}
+
+body {
+  background-color: var(--bodyBG);
+  color: var(--bodyFont);
+}
+
+/* =======================
+       My classes
+==========================*/
+
+.border {
+  border: 4px solid red;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* =================
+    General Style
+====================*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+html {
+  font-family: system-ui, -apple-system, "Roboto", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0.88rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scrollbar-color: #9e4673 #3d4a59;
+}
+
+main {
+  width: 80%;
+  margin-inline: auto;
+}
+
+@media (width < 600px) {
+  main {
+    width: 100%;
+  }
+}
+
+/* =======================
+       HTML elements
+==========================*/
+a,
+button {
+  all: unset;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+button:active,
+a:active {
+  scale: 0.9;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+button:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+  scale: 1;
+}
+
+li {
+  list-style: none;
+}
+
+/* =======================================
+    General Style for this project
+==========================================*/
+.fa-solid {
+  color: var(--icons);
+}

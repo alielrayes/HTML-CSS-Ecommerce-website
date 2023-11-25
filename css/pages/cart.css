@@ -1,0 +1,117 @@
+header.flex {
+  background-color: var(--footer-bg);
+  color: var(--white);
+  padding-block: 0.6rem;
+
+  & .fa-solid {
+    color: var(--white);
+  }
+
+  & .logo .fa-solid {
+    font-size: 1.5rem;
+  }
+
+  & .sign-in:hover,
+  & .register:hover {
+    border: 1px solid rgb(152, 154, 189);
+    padding: 0.5rem 1.1rem;
+  }
+
+  & .cart:hover {
+    border: 1px solid rgb(152, 154, 189);
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+  }
+
+  & .logo:hover {
+    scale: 0.95;
+  }
+}
+
+section.cart article.flex {
+  background-color: var(--white);
+  border-top: 2px solid var(--blue-button);
+  margin-top: 1.8rem;
+
+  justify-content: space-between;
+  max-width: 450px;
+  margin-inline: auto;
+  border-radius: 4px;
+  font-weight: 500;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+
+  & .fa-trash-can {
+    color: var(--red-button);
+    margin-left: 1rem;
+  }
+
+  & button.decrease {
+    color: var(--blue-button);
+    font-size: 1.9rem;
+  }
+
+  & .quantity {
+    background-color: var(--blue-button);
+    color: var(--white);
+    font-size: 0.8rem;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-inline: 0.4rem;
+  }
+
+  & button.increase {
+    color: var(--blue-button);
+    font-size: 1.4rem;
+  }
+}
+
+button.clear {
+  background-color: var(--red-button);
+  color: var(--white);
+
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+section.summary {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+
+  width: 233px;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+  border-radius: 4px;
+
+  & h1 {
+    font-size: 1.2rem;
+    padding-block: 0.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  }
+
+  & div.flex {
+    padding-inline: 0.5rem;
+    margin-block: 0.6rem;
+    justify-content: space-between;
+  }
+
+  & button.checkout {
+    width: 100%;
+    background-color: var(--blue-button);
+    color: var(--white);
+    padding-block: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  & a {
+    padding-block: 0.5rem;
+    color: var(--red-button);
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,113 @@
+header.flex {
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-top: 1.2rem;
+
+  & .links .fa-solid {
+    margin-right: 0.3rem;
+  }
+
+  & .sign-in {
+    margin-inline: 1rem;
+  }
+
+  & .sign-in,
+  & .register {
+    border: 1px solid var(--bodyFont);
+    padding: 0.44rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & .sign-in:hover,
+  & .register:hover,
+  & .sign-in:hover .fa-solid,
+  & .register:hover .fa-solid {
+    background-color: var(--bodyFont);
+    color: var(--blue);
+  }
+
+  & .cart {
+    background-color: var(--bodyFont);
+    color: var(--blue);
+    font-size: 0.9rem;
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    border-radius: 55px;
+  }
+
+  & .cart .fa-solid {
+    color: var(--blue);
+  }
+
+  & .products-number {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    background-color: rgb(255, 90, 123);
+    height: 20px;
+    width: 20px;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+  }
+
+  /* ======================
+    Left Section (Logo)
+==========================*/
+  & .fa-bag-shopping {
+    font-size: 2rem;
+  }
+}
+
+@media (width < 600px) {
+  header.flex {
+    justify-content: center;
+    padding-inline: 0;
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+/* ==============================
+When dcroll down on the home page 
+=================================*/
+header.scroll-down {
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding-bottom: 0.5rem;
+  background-color: var(--footer-bg);
+  color: #fff;
+  z-index: 11;
+
+  & .fa-bag-shopping,
+  & .fa-user-plus,
+  & .fa-right-to-bracket {
+    color: white;
+  }
+
+  & .logo {
+    font-size: 0.8rem;
+  }
+
+  & .logo .fa-bag-shopping {
+    font-size: 1.66rem;
+  }
+}
